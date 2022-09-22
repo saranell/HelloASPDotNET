@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mtGrlvJWznHI6xZ7IZEao+lT7LcMwf6tk1xR+8oK88OW39Hv0rIH2DUY3yeD0ZCGxU5IuBjKfXD2nOLC/s8+xA==",
+  "success": true,
+  "projectFilePath": "/Users/saranelson/lcwomen+/c#practice/HelloASPDotNET/HelloASPDotNET/HelloASPDotNET.csproj",
+  "expectedPackageFiles": [
+    "/Users/saranelson/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/saranelson/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.28/microsoft.netcore.app.host.osx-x64.3.1.28.nupkg.sha512",
+    "/Users/saranelson/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
