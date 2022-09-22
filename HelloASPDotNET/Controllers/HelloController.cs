@@ -27,7 +27,9 @@ namespace HelloASPDotNET.Controllers
             "<select name='language' />" +
             "<option value='english' selected>English</option>" +
             "<option value='french'>French</option>" +
-            "<option value='spanish'>Spanish</option></select>" +
+            "<option value='spanish'>Spanish</option>" +
+            "<option value='german'>German</option>" +
+            "<option value='japanese'>Japanese</option></select>" +
             "<input type='submit' value='Call me by my name' />" + //button
             "</form>"; // closing tag
             return Content(html, "text/html");
@@ -43,6 +45,33 @@ namespace HelloASPDotNET.Controllers
         public IActionResult Welcome(string name = "World")
         {
             return Content("<h1>Welcome to my app " + name + "!</html>", "text/html");
+        }
+
+        [Route("/Hello")]
+        [HttpPost]
+        public IActionResult Display(string name="World" , string language = "english")
+        {
+            return Content(CreateMessage(name, language));
+        }
+        public static string CreateMessage(string name, string language)
+        {
+            string helloTranslate = "";
+            switch (language)
+            {
+                case "french":
+                    helloTranslate = "Bonjour";
+                    break;
+                case "spanish":
+                    helloTranslate = "Hola";
+                    break;
+                case "german":
+                    helloTranslate = "Guten Tag";
+                    break;
+                case "japanese":
+                    helloTranslate = "こんにちは\nKon'nichiwa";
+                    break;
+            }
+            return helloTranslate + name;
         }
     }
 }
